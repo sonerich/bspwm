@@ -1,1 +1,1 @@
-# bspwm
+# BSPWM
