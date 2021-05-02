@@ -18,9 +18,9 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 # wallpaper
-#feh --bg-scale Pictures/wallpaper/DBturtleHouse.png &
+# feh --bg-scale Pictures/wallpaper/station.jpg &
 
-wal -i Pictures/wallpaper/DBturtleHouse.png --saturate 0.9 &
+wal -i Pictures/wallpaper/turtlehouse.png --saturate 0.9 &
 
 # autostart
 dunst &
