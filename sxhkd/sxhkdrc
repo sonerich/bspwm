@@ -17,23 +17,23 @@ XF86AudioRaiseVolume
 XF86AudioLowerVolume
 	pulseaudio-ctl down
 
-#XF86KbdBrightnessUp
-	#xbacklight -set 50
+Shift + XF86AudioRaiseVolume
+	xbacklight -inc 5
 
-#XF86KbdBrightnessDown
-	#sh dec.sh
+Shift + XF86AudioLowerVolume
+    xbacklight -dec 5
 
 # flameshot (temporary shortcut)
 super + q
 	flameshot gui -p ~/Pictures/screenshots
 
 # terminal emulator
-super + Return
+alt + Return
 	alacritty
 
 # program launcher
-super + space
-	rofi -show run
+alt + space
+	sh ~/.config/rofi/launchers/colorful/launcher.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -92,7 +92,7 @@ super + {p,b,comma,period}
 	# bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
-super + bracket{left,right}
+alt + {comma, period}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
