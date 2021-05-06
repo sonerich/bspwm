@@ -1,5 +1,6 @@
 # BSPWM
 
+## Used Programs
 - `picom-ibhagwan-git`
 - `alacritty`
 - `sxhkd`
