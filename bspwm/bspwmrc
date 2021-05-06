@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d code office graphics
+bspc monitor -d code office graphics 4
 
 bspc config border_width         0
 bspc config window_gap           9
@@ -22,6 +22,7 @@ bspc rule -a Emacs state=tiled
 wal -i Pictures/wallpaper/turtlehouse.png --saturate 0.9 &
 
 # autostart
+sh ~/.config/polybar/launch.sh &
 dunst &
 sxhkd &
 xmodmap ~/.config/keyboard/Xmodmap &

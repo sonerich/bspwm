@@ -1,3 +1,2 @@
 killall polybar
-polybar info &
-#polybar example &
+polybar center &
