@@ -22,7 +22,6 @@ bspc rule -a Emacs state=tiled
 wal -i Pictures/wallpaper/turtlehouse.png --saturate 0.9 &
 
 # autostart
-sh ~/.config/polybar/launch.sh &
 dunst &
 sxhkd &
 xmodmap ~/.config/keyboard/Xmodmap &
