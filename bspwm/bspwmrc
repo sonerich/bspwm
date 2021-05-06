@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V
+bspc monitor -d code office graphics
 
 bspc config border_width         0
 bspc config window_gap           9
@@ -26,5 +26,7 @@ dunst &
 sxhkd &
 xmodmap ~/.config/keyboard/Xmodmap &
 sh ~/.config/keyboard/xcape &
+alacritty &
 sh ~/.config/polybar/launch.sh &
+plank &
 picom --experimental-backends &
